@@ -8,5 +8,7 @@ export const ViewProfile = ({ userId, profileId }: { userId: string, profileId: 
         throw new Error("User cannot view profile")
     }
 
-    return user
+    const profile = User({ userId }).viewProfile(profileId)
+
+    return profile
 }

@@ -6,5 +6,8 @@ export const User = ({ userId }) => ({
     },
     canUserViewProfile: (profileId: string) => {
         return userId === profileId
+    },
+    viewProfile: (profileId: string) => {
+        return users[profileId]
     }
 })
