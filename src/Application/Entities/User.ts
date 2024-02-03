@@ -1,8 +1,8 @@
-import { users } from "../../../data/users"
+import { getUser } from "../../Infrastructure/getUser"
 
 export const User = ({ userId }) => ({
     getUser: () => {
-        return users[userId]
+        return getUser({ userId })
     },
     canUserViewProfile: (profileId: string) => {
         return userId === profileId
