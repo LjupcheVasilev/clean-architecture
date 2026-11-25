@@ -1,2 +1,26 @@
 node_modules
 dist
+# --- added during Mac migration ---
+node_modules/
+node_modules */
+.next/
+dist/
+build/
+target/
+.venv/
+venv/
+my-venv/
+.expo/
+.netlify/
+.bolt/
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.default
+google-services.json
+GoogleService-Info.plist
+*.pem
+*.key
+.codex/
+.DS_Store
